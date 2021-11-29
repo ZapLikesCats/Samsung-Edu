@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body style=" background: linear-gradient(
+    to bottom right,
+    rgb(226, 223, 255),
+    rgb(181, 173, 255)
+  ) fixed;">
+    <div class="navbar">
+        <a href="main page.html">
+            <img class="logo" src="Samsung Edu Logo.png" alt="">
+        </a>
+        <div class="navbar-div">
+            <nav>
+                <a href="explore.html">Explore</a> | <a href="StudyBuddies.html">Study Buddies</a> |
+                <a href="todolist.html">To-Do List</a> |
+
+
+            </nav>
+        </div>
+    </div>
+    <div class="studybuddies-container">
+      <h2 style="font-size: 25px; color: white;margin-top: 30px;">Find Study Buddies</h2>
+    </div>
+    <div class="studybuddies">
+      <div onclick="deny()" class="studybuddies1"></div>
+      <div class="studybuddies2">
+        <img id="img1" onclick="intro()" style="border: 3px solid rgb(39, 0, 146); margin-top: 1px; width: auto; height:80%; border-radius: 15%;" src="zap ice cream.png" alt="">
+        <h2 style="margin-right: 100px; margin-top: 10px; color: white; font-size:30px;">Sean Lee</h2>
+        <img style="width: 80%; height: auto; margin-top: -20px; margin-right: 50px;" src="good at science maths sft.JPG" alt="">
+      </div>
+      <div onclick="agree()" class="studybuddies3"></div>
+    </div>
+    <script>
+      function intro() 
+      {
+        alert("Press left side of the image to deny. Press right side of the image to agree")
+      }
+
+      function deny()
+      {
+        document.getElementById("img1").src = "zap ice cream deny.png";
+      }
+
+      function agree()
+      {
+        document.getElementById("img1").src = "zap ice cream agree.png";
+      }
+    </script>
+  </body>
+</html>
