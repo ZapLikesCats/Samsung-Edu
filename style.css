@@ -223,6 +223,11 @@ div.video-container[type="two"] {
 div.video-container[type="three"] {
   background-color: rgb(233, 196, 255);
 }
+div.video-container[type="three"] a {
+  text-align: center;
+  padding: auto;
+  color: white;
+}
 div.video-container[type="four"] {
   background-color: rgb(224, 224, 255);
   float: right;
@@ -237,8 +242,13 @@ div.video-container[type="four"] {
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
 div.video-container[type="four"] a {
-  text-align: center;
-  color: white;
+  width: 30%;
+  height: 30%;
+  margin: -10px 10px 10px 10px;
+  border: 0px solid rgb(55, 0, 207);
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 /* Style the search field */
 form.example input[type="text"] {
